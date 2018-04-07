@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="main.css">
+		<title>A Thousand Folds</title>
+		<link href="https://fonts.googleapis.com/css?family=Kavivanar|Roboto+Condensed" rel="stylesheet">
+	</head>
+	<body> 
+		<header>
+			<a href="index.html">
+				<img id="logo" src="https://s20.postimg.org/xlk9qdevx/crane_logo.png"/>
+			    <h1>A Thousand Folds</h1>
+			<h2>Origami Tutorials</h2>
+			</a>
+		      <nav>
+			      <ul id="navbar">
+		    	     <li class="navitem"> <div class="dropdown">
+                          <button class="dropbtn">Basics</button>
+                            <div class="dropdown-content">
+                              <a href="folds.html">Folds</a>
+                              <a href="bases.html">Bases</a>
+                            </div>
+                      </div>
+                    
+			         <li class="navitem"> <div class="dropdown">
+                          <button class="dropbtn">Beginner</button>
+                            <div class="dropdown-content">
+                              <a href="canoe.html">Canoe</a>
+                              <a href="kabuto.html">Kabuto</a>
+                              <a href="piano.html">Piano</a>
+                              <a href="shuriken.html">Shuriken</a>
+                              <a href="waterb.html">Waterbomb</a>
+                             </div>
+                      </div>
+                      
+			     	<li class="navitem"> <div class="dropdown">
+                          <button class="dropbtn">Intermediate</button>
+                            <div class="dropdown-content">
+                              <a href="fish.html">Angelfish</a>
+                              <a href="butterfly.html">Butterfly</a>
+                              <a href="crane.html">Crane</a>
+                              <a href="iris.html">Iris</a>
+                              <a href="square.html">Square Box</a>
+                              <a href="star.html">Star Box</a>
+                             </div>
+                      </div>
+                      
+			    	 <li class="navitem"> <div class="dropdown">
+                          <button class="dropbtn">Advanced</button>
+                            <div class="dropdown-content">
+                              <a href="dog.html">Dog</a>
+                              <a href="hare.html">Dollar Bill Hare</a>
+                              <a href="elephant.html">Elephant</a>
+                              <a href="macaw.html">Macaw</a>
+                              <a href="panda.html">Panda</a>
+                             </div>
+                      </div>
+                      
+			    	 <li class="navitem"> <div class="dropdown">
+			    	     <a href="question.html">
+                          <button class="dropbtn">Questions?</button>
+                         </a>
+                      </div>
+		    	  </ul>
+	          </nav> 
+		</header>
+		
+		<div id="slideshow">
+          <img class="mySlides" src="https://s20.postimg.org/frq3neax9/DSC_1358.jpg">
+          <img class="mySlides" src="https://s20.postimg.org/ycebuo6p9/DSC_1357.jpg">
+          <img class="mySlides" src="https://s20.postimg.org/6k2gkrtcd/DSC_1359.jpg">
+          <img class="mySlides" src="https://s20.postimg.org/u78it673h/DSC_0707.jpg">
+          <img class="mySlides" src="https://s20.postimg.org/qxtlgcuvh/DSC_1374.jpg">
+        </div> 
+
+        <!-- Slideshow -->    
+        <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+
+        <div>
+            
+            <!--Screencast o matic-->
+            
+            <h4></h4>
+                <p id="homedesc">Origami is the Japanese art of folding paper. Derived from the Japanese words ori (folding) and kami (paper), its origin is rather ambiguous as it is attributed to either China or Japan depending on the source. Later on, however, Germany began to develop its own style of origami that, upon reaching Japan, became a large influence for modern origami.</p>
+                <p id="homedesc">A Thousand Folds features nineteen tutorials of origami models, both traditional and modern, that showcase the simplicity and complexity of the art of folding paper. If you have not practiced origami before, checking the Folds page under the Bases tab is highly recommended. It includes pictures showing the many types of folds used in origami such as the sink fold, the petal fold, and the rabbit ear fold.</p>
+            
+            
+        </div>
+
+		<footer>
+		    <p>2018 A Thousand Folds</p>
+		</footer>
+	</body>
+</html>
